@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/qDo/static/js/main.05d0983e.chunk.js",
+    "main.js.map": "/qDo/static/js/main.05d0983e.chunk.js.map",
+    "runtime~main.js": "/qDo/static/js/runtime~main.6060748a.js",
+    "runtime~main.js.map": "/qDo/static/js/runtime~main.6060748a.js.map",
+    "static/js/2.009a1016.chunk.js": "/qDo/static/js/2.009a1016.chunk.js",
+    "static/js/2.009a1016.chunk.js.map": "/qDo/static/js/2.009a1016.chunk.js.map",
+    "index.html": "/qDo/index.html",
+    "precache-manifest.f541b9506fc33c1d29ad4f5e3d317f42.js": "/qDo/precache-manifest.f541b9506fc33c1d29ad4f5e3d317f42.js",
+    "service-worker.js": "/qDo/service-worker.js"
+  }
+}
