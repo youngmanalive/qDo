@@ -8,7 +8,7 @@ export const Container = styled.div`
   transition: background 500ms ease;
   margin-bottom: 2px;
 
-  &:hover {
+  :hover, :focus {
     background: #f7f7f7;
   }
 

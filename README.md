@@ -1,12 +1,14 @@
 # qDo
 
-Yet, another ToDos app :)
+yet, another todos app :)
 
-Tech:
-- `React`
-- `MobX`
-- `Emotion`
+tech:
+- `react`
+- `mobx`
+- `emotion`
+- `radiance-ui`
 
-ToDos are persisted to `localStorage`.
+todos are persisted to `localStorage`.
 
-[DEMO HERE](https://youngmanalive.github.io/qDo/)
+- [demo](https://youngmanalive.github.io/qDo/)
+- [codesandbox](https://codesandbox.io/s/github/youngmanalive/qdo)

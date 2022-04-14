@@ -30,7 +30,10 @@ class NewToDo extends React.Component {
     const { isOpen } = this.state;
     const { key } = event;
 
-    if ((!isOpen && key.toLowerCase() === 'a') || (isOpen && key === 'Escape')) {
+    if (
+      (!isOpen && key.toLowerCase() === 'a') ||
+      (isOpen && key === 'Escape')
+    ) {
       this.toggleForm();
     }
   };
@@ -48,18 +51,18 @@ class NewToDo extends React.Component {
       body
     });
 
-    this.setState({
-      title: '',
-      body: '',
-      isOpen: false
-    });
+    this.toggleForm(true);
   };
 
-  toggleForm = () => {
+  toggleForm = (reset = false) => {
+    const fields = reset ? { title: '', body: '' } : {};
+
     this.setState(
-      ({ isOpen }) => ({ isOpen: !isOpen }),
+      ({ isOpen }) => ({ isOpen: !isOpen, ...fields }),
       () => {
-        this.state.isOpen ? this.titleField.focus() : this.titleField.blur();
+        this.state.isOpen
+          ? this.titleInput.focus()
+          : document.activeElement.blur();
       }
     );
   };
@@ -79,7 +82,9 @@ class NewToDo extends React.Component {
           <Form isOpen={isOpen} onSubmit={this.submit}>
             <Field label='Title' labelFor='title'>
               <Input
-                ref={input => { this.titleField = input; }}
+                ref={input => {
+                  this.titleInput = input;
+                }}
                 id='title'
                 value={title}
                 onChange={this.update('title')}
